@@ -11,6 +11,8 @@ echo -e "\e[33mExtract Frontend Content\e[0m"
 cd /usr/share/nginx/ht  ml
 unzip /tmp/frontend.zip
 
+cp /home/centos/roboshop-shell/roboshop.conf  /etc/nginx/default.d/roboshop.conf
+
 echo -e "\e[33mStarting Nginx Server\e[0m"
 systemctl enable nginx
 systemctl restart nginx
